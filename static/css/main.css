@@ -1,0 +1,92 @@
+/*
+Loads 18th century style font, Essays 1743, a font by John Stracke
+*/
+@font-face {
+  font-family: essay;
+  src: url(../fonts/essay.ttf);
+}
+
+@font-face {
+  font-family: essay-bold;
+  src: url(../fonts/essay-bold.ttf);
+}
+
+.transparentBackgroundColorMixin(@alpha,@color) {
+  background-color: rgba(red(@color), green(@color), blue(@color), @alpha);
+}
+
+body {
+	font-family: essay;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: essay;
+}
+
+/* 
+Books Background 
+*/
+.background {
+	position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: url(../img/library.jpg) no-repeat center center fixed; 
+	background-size: cover;
+	opacity: 0.2;
+}
+
+/*
+Main interface
+*/
+a {
+	color: #707B7C;
+}
+
+a:hover {
+	color: #4D5656;
+}
+
+#github img {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+}
+
+#header {
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+#license {
+	position: absolute; 
+	bottom: 5px;
+	left: 5px;
+}
+
+/*
+Starting button
+*/
+#header h2 {
+	margin-top: 70px;
+	border: 1px solid black;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.6);
+	mix-blend-mode: color;
+}
+
+#header h2:hover {
+	cursor: pointer;
+	background: rgba(236, 240, 241, 0.6);
+}
