@@ -1,3 +1,6 @@
+/*
+Loads 18th century style font
+*/
 @font-face {
   font-family: essay;
   src: url(../fonts/essay.ttf);
@@ -13,6 +16,13 @@ body {
 	margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	font-family: essay;
+}
+
+/* 
+Books Background 
+*/
 .background {
 	height: 100vh;
 	width: 100%;
@@ -26,16 +36,9 @@ body {
 	filter: alpha(opacity=20);
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: essay;
-}
-
-#menu {
-	margin-top: 10px;
-	text-align: center;
-	height: 120px;
-}
-
+/*
+Main interface
+*/
 a {
 	color: #707B7C;
 }
@@ -53,11 +56,25 @@ a:hover {
 	height: 40px;
 }
 
-
 #header {
 	text-align: center;
 }
 
+h1 {
+	margin-bottom: 10px;
+}
+
+
+#license {
+	color: black;
+	position: absolute; 
+	bottom: 5px;
+	left: 5px;
+}
+
+/*
+Starting button
+*/
 #header h2 {
 	margin-top: 70px;
 	border: 1px solid black;
@@ -68,17 +85,7 @@ a:hover {
 	mix-blend-mode: color;
 }
 
-h1 {
-	margin-bottom: 10px;
-}
-
 #header h2:hover {
 	cursor: pointer;
-}
-
-#license {
-	color: black;
-	position: absolute; 
-	bottom: 5px;
-	left: 5px;
+	background-color: #E5E7E9;
 }
