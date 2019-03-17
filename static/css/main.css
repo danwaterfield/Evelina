@@ -86,7 +86,7 @@ form {
 	background: rgba(255,255,255, 0.6);
 }
 
-#fileToUpload {
+#file {
 	border: 1px solid black;
 	box-sizing: border-box;
 	width: 25vw;
