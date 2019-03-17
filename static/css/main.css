@@ -82,11 +82,11 @@ Starting button
 	border-radius: 4px;
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: white;
+	background: rgba(255, 255, 255, 0.6);
 	mix-blend-mode: color;
 }
 
 #header h2:hover {
 	cursor: pointer;
-	background-color: #E5E7E9;
+	background: rgba(236, 240, 241, 0.6);
 }
