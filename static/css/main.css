@@ -1,5 +1,5 @@
 /*
-Loads 18th century style font
+Loads 18th century style font, Essays 1743, a font by John Stracke
 */
 @font-face {
   font-family: essay;
@@ -9,6 +9,10 @@ Loads 18th century style font
 @font-face {
   font-family: essay-bold;
   src: url(../fonts/essay-bold.ttf);
+}
+
+.transparentBackgroundColorMixin(@alpha,@color) {
+  background-color: rgba(red(@color), green(@color), blue(@color), @alpha);
 }
 
 body {
@@ -24,15 +28,15 @@ h1,h2,h3,h4,h5,h6 {
 Books Background 
 */
 .background {
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	z-index:-1;
-	background-repeat: no-repeat;
+	position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: url(../img/library.jpg) no-repeat center center fixed; 
 	background-size: cover;
 	opacity: 0.2;
-	filter: alpha(opacity=20);
 }
 
 /*
