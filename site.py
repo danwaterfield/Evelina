@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 
 UPLOAD_FOLDER = 'images'
-SECRET_KEY = 'my super secret key'.encode('utf8')
+SECRET_KEY = 't7Q16z9TefoKcfLIlShL'.encode('utf8')
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
 
 app = Flask(__name__)
