@@ -29,7 +29,6 @@ Books Background
 	position: fixed;
 	top: 0;
 	z-index:-1;
-	background-image: url("../img/library.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.2;
