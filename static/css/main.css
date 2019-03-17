@@ -36,12 +36,40 @@ h1,h2,h3,h4,h5,h6 {
 	height: 120px;
 }
 
-#menu a{ 
+a {
 	color: #707B7C;
+}
+
+a:hover {
+	color: #4D5656;
+}
+
+#menu a{ 
 	font-size: 30px;
 	margin: 0 10px;
 }
 
 #header {
 	text-align: center;
+}
+
+#header h2 {
+	margin-top: 70px;
+	border: 1px solid black;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: white;
+	mix-blend-mode: color;
+}
+
+#header h2:hover {
+	cursor: pointer;
+}
+
+#license {
+	color: black;
+	position: absolute; 
+	bottom: 5px;
+	left: 5px;
 }
